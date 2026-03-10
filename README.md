@@ -119,7 +119,9 @@ docker compose up -d --force-recreate --no-deps extensionsapi
 docker compose up -d --force-recreate --no-deps frontend
 ```
 
-The backend endpoint is available at `http://localhost:8009/elobs-word-updater/generate`.
+The fontent view is available at `http://localhost:5005/studies/elobs-word-updater`.
+
+The backend SWAGGER Extension API is available at `http://localhost:5005/extensions-api/docs#/ElObsWordUpdater`.
 
 ---
 

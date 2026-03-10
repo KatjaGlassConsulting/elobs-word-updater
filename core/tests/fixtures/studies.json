@@ -1,0 +1,346 @@
+{
+    "items": [
+        {
+            "uid": "Study_000001",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "0",
+                    "subpart_id": null,
+                    "study_acronym": null,
+                    "study_subpart_acronym": null,
+                    "project_number": "CDISC DEV",
+                    "project_name": "CDISC Dev",
+                    "description": null,
+                    "clinical_programme_name": "CDISC Development programme",
+                    "study_id": "CDISC DEV-0"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-05T07:19:52.034883Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": "Title for this Study (new)",
+                    "study_short_title": "Short title for this Study (new)"
+                }
+            }
+        },
+        {
+            "uid": "Study_000002",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "delete",
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "0001",
+                    "subpart_id": null,
+                    "study_acronym": "DDF-SampleData-0001",
+                    "study_subpart_acronym": null,
+                    "project_number": "CDISC DEV",
+                    "project_name": "CDISC Dev",
+                    "description": null,
+                    "clinical_programme_name": "CDISC Development programme",
+                    "study_id": "CDISC DEV-0001"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-04T11:57:14.980902Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": null,
+                    "study_short_title": null
+                }
+            }
+        },
+        {
+            "uid": "Study_000003",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "delete",
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "3000",
+                    "subpart_id": null,
+                    "study_acronym": "DummyStudy 0",
+                    "study_subpart_acronym": null,
+                    "project_number": "999",
+                    "project_name": "Dummy",
+                    "description": null,
+                    "clinical_programme_name": "Dummy",
+                    "study_id": "999-3000"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-04T12:09:37.716421Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": null,
+                    "study_short_title": null
+                }
+            }
+        },
+        {
+            "uid": "Study_000004",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "delete",
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "3001",
+                    "subpart_id": null,
+                    "study_acronym": "DummyStudy 1",
+                    "study_subpart_acronym": null,
+                    "project_number": "999",
+                    "project_name": "Dummy",
+                    "description": null,
+                    "clinical_programme_name": "Dummy",
+                    "study_id": "999-3001"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-04T12:13:36.526089Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": null,
+                    "study_short_title": null
+                }
+            }
+        },
+        {
+            "uid": "Study_000005",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "delete",
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "3002",
+                    "subpart_id": null,
+                    "study_acronym": "DummyStudy 2",
+                    "study_subpart_acronym": null,
+                    "project_number": "999",
+                    "project_name": "Dummy",
+                    "description": null,
+                    "clinical_programme_name": "Dummy",
+                    "study_id": "999-3002"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-04T12:16:07.086058Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": null,
+                    "study_short_title": null
+                }
+            }
+        },
+        {
+            "uid": "Study_000006",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "delete",
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "3003",
+                    "subpart_id": null,
+                    "study_acronym": "DummyStudy 3",
+                    "study_subpart_acronym": null,
+                    "project_number": "999",
+                    "project_name": "Dummy",
+                    "description": null,
+                    "clinical_programme_name": "Dummy",
+                    "study_id": "999-3003"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-04T12:19:56.907138Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": null,
+                    "study_short_title": null
+                }
+            }
+        },
+        {
+            "uid": "Study_000007",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "delete",
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "3004",
+                    "subpart_id": null,
+                    "study_acronym": "DummyStudy 4",
+                    "study_subpart_acronym": null,
+                    "project_number": "999",
+                    "project_name": "Dummy",
+                    "description": null,
+                    "clinical_programme_name": "Dummy",
+                    "study_id": "999-3004"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-04T12:23:07.537108Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": null,
+                    "study_short_title": null
+                }
+            }
+        },
+        {
+            "uid": "Study_000008",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "delete",
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "3005",
+                    "subpart_id": null,
+                    "study_acronym": "DummyStudy 5",
+                    "study_subpart_acronym": null,
+                    "project_number": "999",
+                    "project_name": "Dummy",
+                    "description": null,
+                    "clinical_programme_name": "Dummy",
+                    "study_id": "999-3005"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-04T12:25:49.003119Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": null,
+                    "study_short_title": null
+                }
+            }
+        },
+        {
+            "uid": "Study_000009",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "delete",
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "3006",
+                    "subpart_id": null,
+                    "study_acronym": "DummyStudy 6",
+                    "study_subpart_acronym": null,
+                    "project_number": "999",
+                    "project_name": "Dummy",
+                    "description": null,
+                    "clinical_programme_name": "Dummy",
+                    "study_id": "999-3006"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-04T12:28:35.459350Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": null,
+                    "study_short_title": null
+                }
+            }
+        },
+        {
+            "uid": "Study_000010",
+            "study_parent_part": null,
+            "study_subpart_uids": [],
+            "possible_actions": [
+                "delete",
+                "lock",
+                "release"
+            ],
+            "current_metadata": {
+                "identification_metadata": {
+                    "study_number": "3007",
+                    "subpart_id": null,
+                    "study_acronym": "DummyStudy 7",
+                    "study_subpart_acronym": null,
+                    "project_number": "999",
+                    "project_name": "Dummy",
+                    "description": null,
+                    "clinical_programme_name": "Dummy",
+                    "study_id": "999-3007"
+                },
+                "version_metadata": {
+                    "study_status": "DRAFT",
+                    "version_number": null,
+                    "version_timestamp": "2026-03-04T12:31:03.450733Z",
+                    "version_author": "unknown-user@example.com",
+                    "version_description": null
+                },
+                "study_description": {
+                    "study_title": null,
+                    "study_short_title": null
+                }
+            }
+        }
+    ],
+    "total": 0,
+    "page": 1,
+    "size": 10
+}

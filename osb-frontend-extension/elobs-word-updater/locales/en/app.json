@@ -1,0 +1,20 @@
+{
+  "ElObsWordUpdater": {
+    "menu_label": "ELOBS Word Updater",
+    "title": "ELOBS Word Updater",
+    "description": "Upload a Word template and populate it with study data from OpenStudyBuilder.",
+    "study_label": "Study",
+    "study_placeholder": "Select a study",
+    "version_label": "Version",
+    "version_latest": "Latest",
+    "tags_label": "Fields to update",
+    "tags_all": "All fields",
+    "template_label": "Word template (.docx)",
+    "template_hint": "Upload a .docx file containing SB_* content controls",
+    "generate_button": "Generate document",
+    "generating": "Generating...",
+    "success_message": "Document generated successfully.",
+    "error_message": "An error occurred while generating the document.",
+    "download_filename": "protocol.docx"
+  }
+}

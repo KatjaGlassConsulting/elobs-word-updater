@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+dist/
+*.egg-info/
+config.yaml
+.pytest_cache/
+htmlcov/
+.coverage
+.claude/settings.local.json
+my_protocol_output.docx
+output.docx
+output2.docx
+docs/plans

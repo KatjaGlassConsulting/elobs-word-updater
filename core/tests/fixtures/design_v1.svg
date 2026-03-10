@@ -1,0 +1,171 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="642" height="203">
+  <defs>
+    <marker id="arrowhead1" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 6 3 L 0 6 z" />
+    </marker>
+    <marker id="arrowhead2" viewBox="0 0 6 6" refX="3" refY="0" markerWidth="6" markerHeight="6" orient="0">
+      <path d="M 0 6 L 3 0 L 6 6 z" />
+    </marker>
+    <marker id="arrowtail1" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="6" markerHeight="6" orient="auto">
+      <polyline points="3 0, 3 6" />
+    </marker>
+  </defs>
+  <g id="StudyArm_000001" class="arm" transform="translate(5, 36)">
+    <rect x="0" y="0" width="632" height="40" rx="5" ry="5" />
+    <text>
+      <tspan x="5" y="21">Human Insulin</tspan>
+    </text>
+  </g>
+  <g id="StudyArm_000002" class="arm" transform="translate(5, 81)">
+    <rect x="0" y="0" width="632" height="40" rx="5" ry="5" />
+    <text>
+      <tspan x="5" y="21">Metformin</tspan>
+    </text>
+  </g>
+  <g id="StudyEpoch_000001" class="epoch" transform="translate(216, 5)">
+    <rect x="0" y="0" width="187" height="121" rx="5" ry="5" />
+    <text>
+      <tspan x="61" y="19">Screening</tspan>
+    </text>
+  </g>
+  <g id="StudyEpoch_000002" class="epoch" transform="translate(413, 5)">
+    <rect x="0" y="0" width="219" height="121" rx="5" ry="5" />
+    <text>
+      <tspan x="76" y="19">Treatment</tspan>
+    </text>
+  </g>
+  <g id="StudyElement_000001" class="element" transform="translate(221, 41)">
+    <rect x="0" y="0" width="177" height="75" rx="5" ry="5" />
+    <text>
+      <tspan x="5" y="21">Screening</tspan>
+    </text>
+  </g>
+  <g id="StudyElement_000002" class="element" transform="translate(418, 41)">
+    <rect x="0" y="0" width="209" height="30" rx="5" ry="5" />
+    <text>
+      <tspan x="5" y="21">Human Insulin</tspan>
+    </text>
+  </g>
+  <g id="StudyElement_000003" class="element" transform="translate(418, 86)">
+    <rect x="0" y="0" width="209" height="30" rx="5" ry="5" />
+    <text>
+      <tspan x="5" y="21">Metformin</tspan>
+    </text>
+  </g>
+  <g id="CTTerm_000124" class="visit-type" transform="translate(216, 138)">
+    <text>
+      <tspan x="61" y="16">Screening</tspan>
+    </text>
+  </g>
+  <g id="CTTerm_000130" class="visit-type" transform="translate(413, 138)">
+    <text>
+      <tspan x="76" y="16">Treatment</tspan>
+    </text>
+  </g>
+  <g id="StudyVisit_000002" class="visit-timing" transform="translate(216, 180)">
+    <text>
+      <tspan x="0" y="16">-14 days</tspan>
+    </text>
+  </g>
+  <g id="StudyVisit_000001" class="visit-timing" transform="translate(413, 180)">
+    <text>
+      <tspan x="0" y="16">0 days</tspan>
+    </text>
+  </g>
+  <line class="timeline-arrow" x1="216" x2="413" y1="163" y2="163" />
+  <line class="timeline-arrow" x1="413" x2="642" y1="163" y2="163" />
+  <line class="visit-arrow" x1="216" x2="216" y1="174" y2="162" />
+  <line class="visit-arrow" x1="413" x2="413" y1="174" y2="162" />
+  <style type="text/css">
+    text {
+      font-family: "Times New Roman";
+      font-size: 12pt;
+    }
+    .arm rect {
+      rx: 5px;
+      ry: 5px;
+      stroke-width: 2px;
+    }
+    .epoch rect {
+      rx: 5px;
+      ry: 5px;
+      stroke-width: 2px;
+    }
+    .element rect {
+      rx: 5px;
+      ry: 5px;
+      stroke-width: 1px;
+    }
+    .timeline-arrow {
+      stroke: #AAA;
+      stroke-width: 2px;
+      marker-start: url(#arrowtail1);
+      marker-end: url(#arrowhead1);
+      stroke-dasharray: 6 2;
+    }
+    #arrowtail1 polyline {
+      stroke: #AAA;
+      stroke-width: 1px;
+    }
+    #arrowhead1 path {
+      fill: #AAA;
+    }
+    #arrowhead2 path {
+      fill: #000;
+    }
+    .visit-arrow {
+      stroke: #000;
+      stroke-width: 1px;
+      marker-end: url(#arrowhead2);
+    }
+    #StudyArm_000001 rect {
+      fill: #fef8e4;
+      stroke: #624c04;
+    }
+    #StudyArm_000001 text {
+      fill: #000;
+    }
+    #StudyArm_000002 rect {
+      fill: #fef8e4;
+      stroke: #624c04;
+    }
+    #StudyArm_000002 text {
+      fill: #000;
+    }
+    #StudyEpoch_000001 rect {
+      fill: #cfd8dc;
+      stroke: #2b363b;
+    }
+    #StudyEpoch_000001 text {
+      fill: #000;
+    }
+    #StudyEpoch_000002 rect {
+      fill: #80deea;
+      stroke: #0e4f58;
+    }
+    #StudyEpoch_000002 text {
+      fill: #000;
+    }
+    #StudyElement_000001 rect {
+      fill: #ffe082;
+      stroke: #664d00;
+    }
+    #StudyElement_000001 text {
+      fill: #000;
+    }
+    #StudyElement_000002 rect {
+      fill: #3949ab;
+      stroke: #19214c;
+    }
+    #StudyElement_000002 text {
+      fill: #fff;
+    }
+    #StudyElement_000003 rect {
+      fill: #2e7d32;
+      stroke: #1b4b1e;
+    }
+    #StudyElement_000003 text {
+      fill: #fff;
+    }
+  </style>
+</svg>

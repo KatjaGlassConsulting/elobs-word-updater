@@ -115,8 +115,8 @@ services:
 **3. Restart the containers:**
 
 ```bash
-docker compose up -d --force-recreate --no-deps extensionsapi
-docker compose up -d --force-recreate --no-deps frontend
+docker compose up -d --build --force-recreate --no-deps extensionsapi
+docker compose up -d --build --force-recreate --no-deps frontend
 ```
 
 The fontent view is available at `http://localhost:5005/studies/elobs-word-updater`.
@@ -137,7 +137,7 @@ The backend SWAGGER Extension API is available at `http://localhost:5005/extensi
 
 This project is derived from the [OpenStudyBuilder Word Add-In](https://github.com/NovoNordisk-OpenSource/openstudybuilder-word-addin) by Novo Nordisk A/S, which provided the concept and inspiration for populating Word documents from OpenStudyBuilder data. The original project is licensed under the MIT License — see [NOTICES](NOTICES) for the full upstream copyright notice.
 
-This project was developed with [Claude](https://claude.ai) by Anthropic.
+This project was developed with [Claude](https://claude.ai) by Anthropic using Sonnet 4.6 and Opus 4.8.
 
 ---
 

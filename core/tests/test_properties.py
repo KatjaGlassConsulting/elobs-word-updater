@@ -1,4 +1,5 @@
 from __future__ import annotations
+import io
 from unittest.mock import patch
 from lxml import etree
 from docx import Document
@@ -9,6 +10,36 @@ from elobs_word_updater.document.properties import (
     CUSTOM_PROPS_NS,
     VT_NS,
 )
+
+
+def _roundtrip(doc: Document) -> Document:
+    """Save the doc to an in-memory buffer and reopen it (real persistence path)."""
+    buf = io.BytesIO()
+    doc.save(buf)
+    buf.seek(0)
+    return Document(buf)
+
+
+# --- Real persistence tests (no mocks): document has no custom-properties part ---
+
+def test_set_custom_property_creates_part_and_persists():
+    """A property set on a doc with no custom.xml part is created and survives save/reload."""
+    doc = Document()  # default template has no docProps/custom.xml
+    set_custom_property(doc, "StudyUID", "Study_000001")
+    reloaded = _roundtrip(doc)
+    assert get_custom_property(reloaded, "StudyUID") == "Study_000001"
+
+
+def test_update_study_properties_persists_all_five():
+    """update_study_properties creates and persists all five properties on a fresh document."""
+    doc = Document()
+    update_study_properties(doc, "Study_000001", "CDISC-001", "3", "RELEASED", "2026-03-07T11:00:00Z")
+    reloaded = _roundtrip(doc)
+    assert get_custom_property(reloaded, "StudyUID") == "Study_000001"
+    assert get_custom_property(reloaded, "StudyId") == "CDISC-001"
+    assert get_custom_property(reloaded, "StudyVersion") == "3"
+    assert get_custom_property(reloaded, "StudyVersionStatus") == "RELEASED"
+    assert get_custom_property(reloaded, "OSBSyncedAt") == "2026-03-07T11:00:00Z"
 
 
 def _make_custom_props_root() -> etree._Element:
@@ -30,18 +61,6 @@ def test_get_custom_property_no_part():
     """Returns None when the document has no custom properties part."""
     doc = Document()
     assert get_custom_property(doc, "StudyUID") is None
-
-
-def test_set_custom_property_no_part_does_not_raise():
-    """set_custom_property does not raise when no custom properties part exists."""
-    doc = Document()
-    set_custom_property(doc, "StudyUID", "Study_000001")  # must not raise
-
-
-def test_update_study_properties_no_part_does_not_raise():
-    """update_study_properties does not raise when no custom properties part exists."""
-    doc = Document()
-    update_study_properties(doc, "Study_000001", "CDISC-001", None, "DRAFT", "2026-03-07T11:00:00Z")  # must not raise
 
 
 # --- Tests for get_custom_property ---

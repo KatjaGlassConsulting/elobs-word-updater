@@ -42,7 +42,7 @@ pip install -e .
 # Update all fields, latest version, no auth
 elobs-word-updater \
   --study Study_000001 \
-  --template .\templates\ProtocolTemplate_OSB_1.1.docx \
+  --template .\core\templates\ProtocolTemplate_OSB_1.1.docx \
   --out my_protocol_output.docx \
   --api http://localhost:5005/api
 
@@ -50,13 +50,13 @@ elobs-word-updater \
 elobs-word-updater \
   --study Study_000001 \
   --version 1 \
-  --template .\templates\ProtocolTemplate_OSB_1.1.docx \
+  --template .\core\templates\ProtocolTemplate_OSB_1.1.docx \
   --out output.docx
 
 # Only specific fields
 elobs-word-updater \
   --study Study_000001 \
-  --template .\templates\ProtocolTemplate_OSB_1.1.docx \
+  --template .\core\templates\ProtocolTemplate_OSB_1.1.docx \
   --out output.docx \
   --tag SB_ProtocolTitle \
   --tag SB_StudyID
@@ -70,7 +70,7 @@ Use `^` for line continuation instead of `\`:
 REM Update all fields, latest version, no auth
 elobs-word-updater ^
   --study Study_000001 ^
-  --template .\templates\ProtocolTemplate_OSB_1.1.docx ^
+  --template .\core\templates\ProtocolTemplate_OSB_1.1.docx ^
   --out my_protocol_output.docx ^
   --api http://localhost:5005/api
 
@@ -78,13 +78,13 @@ REM Specific version
 elobs-word-updater ^
   --study Study_000001 ^
   --version 1 ^
-  --template .\templates\ProtocolTemplate_OSB_1.1.docx ^
+  --template .\core\templates\ProtocolTemplate_OSB_1.1.docx ^
   --out output.docx
 
 REM Only specific fields
 elobs-word-updater ^
   --study Study_000001 ^
-  --template .\templates\ProtocolTemplate_OSB_1.1.docx ^
+  --template .\core\templates\ProtocolTemplate_OSB_1.1.docx ^
   --out output.docx ^
   --tag SB_ProtocolTitle ^
   --tag SB_StudyID
@@ -93,7 +93,7 @@ elobs-word-updater ^
 Or put everything on one line:
 
 ```cmd
-elobs-word-updater --study Study_000001 --template .\templates\ProtocolTemplate_OSB_1.1.docx --out my_protocol_output.docx --api http://localhost:5005/api
+elobs-word-updater --study Study_000001 --template .\core\templates\ProtocolTemplate_OSB_1.1.docx --out my_protocol_output.docx --api http://localhost:5005/api
 ```
 
 ## Configuration

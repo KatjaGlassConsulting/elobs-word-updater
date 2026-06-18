@@ -10,6 +10,8 @@ Clinical study teams maintain structured study data in OpenStudyBuilder (OSB). T
 
 **For developers / integrators:** use the standalone CLI or import the Python library to build document generation into pipelines and scripts.
 
+![Extension Demonstration](./img/elobs_word_updater_demo.gif)
+
 ---
 
 ## Repository structure
